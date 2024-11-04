@@ -1,0 +1,940 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: "Manrope500";
+    src: url('/wp-content/themes/annaartstudio/assets/font/Manrope-Medium.ttf');
+}
+@font-face {
+    font-family: "Manrope700";
+    src: url('/wp-content/themes/annaartstudio/assets/font/Manrope-Bold.ttf');
+}
+@font-face {
+    font-family: "Manrope400";
+    src: url('/wp-content/themes/annaartstudio/assets/font/Manrope-Regular.ttf');
+}
+@font-face {
+    font-family: "Manrope300";
+    src: url('/wp-content/themes/annaartstudio/assets/font/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: "Roboto700";
+    src: url('/wp-content/themes/annaartstudio/assets/font/Roboto-Bold.ttf');
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    background-color: rgb(252, 252, 252);
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.header-container{
+    display: flex;
+    max-width: 1680px;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;  
+}
+.header-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 18px;
+}
+.header-socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.header-phone-contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+.header-phone{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope500";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 42px;
+    padding-bottom: 120px;
+    background-color: rgb(252, 252, 252);
+}
+.main-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.main-section-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 126px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.main-section-text::before {
+    content: '________';
+    display: block;
+    position: absolute;
+    text-decoration: underline;
+    width: 455px;
+    overflow: hidden;
+    color: transparent;
+    border-bottom: 3px solid rgb(253, 213, 81);
+}
+.main-content-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.maincontent-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 992px;
+}
+.mainimage-content-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+.mainimage-img {
+    height: auto;
+    object-fit: cover;
+    left: 35%;
+    position: absolute;
+    top: -64px;
+}
+.mainimage-content-text {
+    position: absolute;
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 131px;
+    letter-spacing: 0%;
+    text-align: left;
+    z-index: 2;
+    width: inherit;
+}
+.maincontain-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    top: 153px;
+    gap: 24px;
+}
+.maincontain-text{
+    color: rgb(118, 118, 118);
+    font-family: "Manrope500";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.url-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 13px;
+    color: rgb(252, 252, 252);
+    font-family: "Manrope500";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    background: linear-gradient(90.00deg, rgb(255, 111, 0), rgb(254, 118, 9) 36.4%, rgb(238, 208, 113) 100%);
+    width: 202px;
+    height: 59px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+.festival-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 213, 81);
+}
+.festival-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.festival-content-container{
+    display: flex;
+    flex-direction: column;
+}
+.festival-image-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+}
+.festival-content-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope400";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 997px;
+    position: relative;
+    top: 81px;
+}
+.festival-img{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 37%;
+    bottom: -84px;
+}
+.festival-image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.parents-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: rgb(252, 252, 252);
+}
+.parents-section-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+.parents-content-container{
+    display: flex;
+    flex-direction: column;
+}
+.parents-image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.parents-image-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+}
+.parents-img{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 63%;
+    bottom: -74px;
+}
+.parents-content-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope400";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 942px;
+    top: 73px;
+    position: relative;
+}
+.hotel-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 213, 81);
+}
+.hotel-section-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+.hotel-content-container{
+    display: flex;
+    flex-direction: column;
+}
+.hotel-image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.hotel-image-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+}
+.hotel-img{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 44%;
+    bottom: -96px;
+}
+.hotel-content-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope400";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 942px;
+    top: 93px;
+    position: relative;
+}
+.seminar-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(252, 252, 252);
+    padding-top: 120px;
+    padding-bottom: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.seminar-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 97px;
+}
+.seminar-section-maintext{
+    color: rgb(50, 50, 50);
+    font-family: "Roboto700";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 702px;
+}
+.seminar-section-content-text{
+    /* Manrope 20 regular */
+    color: rgb(50, 50, 50);
+    font-family: "Manrope400";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 878px;
+}
+.seminar-section-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.proffesional-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 252, 252);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.proffesional-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.proffesional-content-container{
+    display: flex;
+    flex-direction: column;
+}
+.proffesional-image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.proffesional-image-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 87px;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 1688px;
+    z-index: 2;
+}
+.professional-img{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    bottom: 59px;
+}
+.proffessional-slider{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+}
+.proffessional-slider-left-btn{
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-top: 13px;
+}
+.proffessional-slider-right-btn{
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-top: 13px;
+}
+.proffessional-slider-item{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+}
+.proff-slider-item-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.proff-slider-named-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.proff-slider-named-text{
+    color: rgb(50, 50, 50);
+    font-family: 'Manrope500';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.proff-slider-named-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.proff-slider-item-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid rgb(253, 213, 81);
+    padding-bottom: 8px;
+}
+.proff-slider-stars-container{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+.proff-slider-item-text{
+    color: rgb(118, 118, 118);
+    font-family: "Manrope500";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 442px;
+}
+.proffessional-slider-items{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    align-items: flex-start;
+}
+.written-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    background-color: rgb(252, 252, 252);
+}
+.written-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.written-content-container{
+    display: flex;
+    flex-direction: column;
+}
+.written-image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.written-image-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 87px;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 1688px;
+    z-index: 2;
+}
+.written-img{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 46%;
+}
+.written-slider-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.written-slider-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+.working-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    overflow: hidden;
+    background-color: rgb(252, 252, 252);
+}
+.working-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.working-content-container{
+    display: flex;
+    flex-direction: column;
+}
+.working-image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+.working-image-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 87px;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 1688px;
+    z-index: 2;
+}
+.working-img{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    right: -4%;
+    top: -32%;
+}
+.working-slider-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.working-slider-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+.working-slider-item:last-child {
+    margin-right: -12vw;
+}
+.cooperation-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 213, 81);
+}
+.cooperation-section-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.cooperation-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cooperation-image-textcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cooperation-image-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.cooperation-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.cooperation-formtext-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    justify-content: flex-start;
+}
+.cooperation-maintext{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.cooperation-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope400";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 862px;
+}
+.form-cooperation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 36px;
+}
+.form-cooperation-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.form-cooperation-btn{/* Manrope 20 medium (Button */
+    color: rgb(252, 252, 252);
+    font-family: "Manrope500";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 239px;
+    height: 59px;
+    border-radius: 16px;
+    background: linear-gradient(90.00deg, rgb(255, 111, 0),rgb(254, 118, 9) 36.4%,rgb(238, 208, 113) 100%);
+    border: none;
+    cursor: pointer;
+}
+.form-cooperation-input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.form-cooperation-input{
+    display: flex;
+    outline: none;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(50, 50, 50);
+    width: 750px;
+    padding: 4px 0px 4px 0px;
+}
+.form-cooperation-input-small{
+    display: flex;
+    outline: none;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(50, 50, 50);
+    width: 367px;
+    padding: 4px 0px 4px 0px;
+}
+.form-cooperation-input-small, .form-cooperation-input, 
+.form-cooperation-input-small::placeholder, .form-cooperation-input::placeholder{
+    color:rgb(161, 124, 0);
+    font-family: "Manrope400";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.radio-form-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.checkbox-input{
+    display: flex;
+    appearance: none;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgb(161, 124, 0);
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+input[type="checkbox"]:checked {
+    background: transparent;
+}
+input[type="checkbox"]:checked:after {
+    content: "\2714";
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.checkbox-input-text{
+    color: rgb(161, 124, 0);
+    font-family: "Manrope300";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 718px;
+    bottom: 3px;
+    position: relative;
+}
+.checkbox-container-form{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.advantages-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.advantages-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.advantages-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.advantages-maintext{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope700";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 1200px;
+}
+.advantages-text{
+    color: rgb(50, 50, 50);
+    font-family: "Manrope400";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 1680px;
+}
+.advantages-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 36px;
+}
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-top: 1px solid rgb(118, 118, 118);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 543px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.footer-urls-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.footer-text-politics{
+    color: rgb(118, 118, 118);
+    font-family: "Manrope400";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.footer-url{
+    color: rgb(118, 118, 118);
+    font-family: "Manrope400";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration-line: underline;
+}
